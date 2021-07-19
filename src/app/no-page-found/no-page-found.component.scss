@@ -1,0 +1,10 @@
+.no-page{
+  background-color: var(--ionix-theme-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  h1{
+    color: var(--ionix-warning) !important;
+  }
+}

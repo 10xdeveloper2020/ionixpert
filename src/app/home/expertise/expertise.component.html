@@ -1,0 +1,26 @@
+<section id="expertise">
+  <div class="content-title">
+    <i class="fa fa-rocket"></i>
+    Expertise
+  </div>
+  <div class="container-fluid main-container">
+    <div class="row" *ngFor="let phase of expertise; let i=index;">
+      <div class="col-md-4 col-lg-3 title-cell d-flex align-items-center justify-content-center">
+        {{phase.name}}
+      </div>
+      <div class="col-md-8 col-lg-9 content-cell">
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-center justify-content-md-start">
+            <div class="col-sm-6 main-cnt mt-4" [ngClass]="{'lang-selected': sharedVarService.isLangExist(lang.name)}"
+              *ngFor="let lang of phase.langs; let j=index;">
+              <div class="img-cnt scale-one" (click)="toggleLang(lang)">
+                <img [src]="'/assets/img/langs/'+lang.img" [alt]="lang.name" [ngClass]="lang?.class">
+              </div>
+              <div class="text-center">{{lang.name}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

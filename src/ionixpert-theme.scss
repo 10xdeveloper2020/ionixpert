@@ -1,0 +1,8 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+$ionixpert-theme-primary: mat-palette($mat-grey, 900);
+$ionixpert-theme-accent:mat-palette($mat-pink, A200, A100, A400);
+$ionixpert-theme-warn: mat-palette($mat-red);
+$ionixpert-theme: mat-light-theme($ionixpert-theme-primary, $ionixpert-theme-accent, $ionixpert-theme-warn);
+@include angular-material-theme($ionixpert-theme);

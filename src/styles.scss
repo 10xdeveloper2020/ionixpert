@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*Material Theme*/
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+// Imports functions, variables, and mixins that are needed by other Bootstrap files
+@import "variables";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+// Import Bootstrap Reboot
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid"; // add the grid
+@import "~bootstrap/scss/utilities"; // add css utilities
+@import "reset";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root{
+  --ionix-theme-dark: #000000;
+  --ionix-theme-light: #212121;
+  --ionix-text-color: #d3d3d3;
+  --ionix-header-color: #ffffff;
+  --ionix-warning: #EC7063;
+
+  --ionix-color-red: #E74C3C;
+  --ionix-color-red-light: #EC7063;
+  --ionix-color-green: #58D68D;
+  --ionix-color-green-light: #82E0AA;
+  --ionix-color-blue: #3498DB;
+  --ionix-color-blue-light: #5DADE2;
+  --ionix-color-yellow: #F4D03F;
+  --ionix-color-yellow-light: #F7DC6F;
+
+}
+
+.main-block {
+  min-height: 100vh;
+  margin-top: 44px;
+}
+.align-c {
+  text-align: center;
+}
+.align-l {
+  text-align: left;
+}
+.align-r {
+  text-align: right;
+}
+.width-100{
+  width: 100%;
+}
+.margin-c{
+  margin: 0 auto;
+}
+.margin-0{
+  margin: 0;
+}
+// a{
+//   color: #ffffff !important;
+// }
+@font-face {
+  font-family: "drwho";
+  src: url("assets/drwho42-font/Drwho42-og50.ttf");
+}
