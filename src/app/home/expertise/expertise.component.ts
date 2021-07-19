@@ -43,6 +43,7 @@ export class ExpertiseComponent implements OnInit {
       langs: [
         { name: 'React', img: 'react.png' },
         { name: 'Node JS', img: 'express_node.png' },
+        { name: 'Redis', img: 'redis.png' },
         { name: 'Deno JS', img: 'denojs.png', class: { 'filter-invert': true } },
       ]
     },
