@@ -1,5 +1,6 @@
 .footer-container {
-  background: var(--ionix-theme-dark);
+  // background: var(--ionix-theme-dark);
+  background-image: url('../../../assets/img/black_wall.png');
   color: var(--ionix-text-color);
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +13,7 @@
   color: var(--ionix-warning);
 }
 .copyright {
-  font-size: 12px;
+  font-size: 14px;
 }
 .social-media-ico {
   a{
@@ -37,6 +38,10 @@
   /* Set a specific color for each brand */
   .fa-envelope{
     background: #3b5998;
+    color: white;
+  }
+  .fa-linkedin{
+    background: #0077b5	;
     color: white;
   }
   .fa-facebook {

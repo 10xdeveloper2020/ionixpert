@@ -9,7 +9,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 })
 export class ModalDialogComponent implements OnInit {
   form: FormGroup;
-  title: string = "Hire Him";
+  title: string = "I'm working on this 😅";
   data: any;
   constructor(private fb: FormBuilder, private dialogRef: MatDialogRef<ModalDialogComponent>,
     @Inject(MAT_DIALOG_DATA) data) {
