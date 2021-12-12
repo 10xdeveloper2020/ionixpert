@@ -12,6 +12,16 @@ const imgUrl = 'https://material.angular.io/assets/img/examples/shiba2.jpg';
 export class ExpertiseComponent implements OnInit {
   expertise = [
     {
+      name: 'Blockchain ▲ Web 3.0 Stack',
+      langs: [
+        { name: 'Ethereum', img: 'ethereum.png', class: { 'filter-invert': true }  },
+        { name: 'Web3 JS', img: 'web3js.png' },
+        { name: 'Solidity', img: 'solidity.png', class: { 'filter-invert': true }  },
+        { name: 'Ganache➕Truffle', img: 'ganache.png' },
+        { name: 'MetaMask', img: 'metamask.svg' }
+      ]
+    },
+    {
       name: 'Currently Working',
       langs: [
         { name: 'Ionic 5', img: 'ionic.png' },
@@ -27,10 +37,11 @@ export class ExpertiseComponent implements OnInit {
       langs: [
         { name: 'Angular Material', img: 'material.png' },
         { name: 'Bootstrap', img: 'bootstrap.png' },
+        { name: 'Semantic UI', img: 'semantic-ui.svg' },
       ]
     },
     {
-      name: 'Restful APIs',
+      name: 'REST APIs',
       langs: [
         { name: 'Nest JS', img: 'nestjs.png' },
         { name: 'Koa JS', img: 'koajs.png', class: { 'filter-invert': true } },
@@ -39,10 +50,17 @@ export class ExpertiseComponent implements OnInit {
       ]
     },
     {
-      name: 'Apprentice',
+      name: 'Testing',
+      langs: [
+        { name: 'Mocha', img: 'mocha.png' },
+      ]
+    },
+    {
+      name: 'Add-ons',
       langs: [
         { name: 'React', img: 'react.png' },
         { name: 'Node JS', img: 'express_node.png' },
+        { name: 'Next JS', img: 'nextjs.svg', class: { 'filter-invert': true }  },
         { name: 'Redis', img: 'redis.png' },
         { name: 'Deno JS', img: 'denojs.png', class: { 'filter-invert': true } },
       ]

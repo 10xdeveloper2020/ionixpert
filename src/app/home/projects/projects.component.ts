@@ -10,6 +10,13 @@ export class ProjectsComponent implements OnInit {
 
   expertise = [
     {
+      name: 'IBM',
+      langs: [
+        { name: 'SBI Yono', img: 'yono.png' },
+        { name: 'Janssen Carepath', img: 'janssen.svg' }
+      ]
+    },
+    {
       name: 'Bristlecone',
       langs: [
         { name: 'MESOP', img: 'mesop.png' },
