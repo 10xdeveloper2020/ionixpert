@@ -45,6 +45,7 @@
   margin-left: 10px;
 }
 .img-cnt {
+  cursor: pointer;
   max-width: 130px;
   height: 130px;
   img {
@@ -57,4 +58,8 @@
 
 .scale-one:hover {
   transform: scale(1.1);
+}
+
+.filter-invert {
+  filter: invert(1);
 }

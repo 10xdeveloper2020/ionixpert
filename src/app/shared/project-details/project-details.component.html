@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>
+    {{PROJECT_DETAILS.name}}
+</h2>
+
+<mat-dialog-content>
+    <p>{{PROJECT_DETAILS.description}}</p>
+
+    <p>
+        <span style="font-weight: 500;color: #db7093;">Technologies: </span>
+        <span *ngFor="let lang of PROJECT_DETAILS.langs; let i=index;">
+            {{lang}}<i *ngIf="i<PROJECT_DETAILS.langs.length-1" style="color: cyan;">,</i>
+        </span>
+    </p>
+</mat-dialog-content>
+
+<mat-dialog-actions style="justify-content: flex-end;">
+    <button class="mat-raised-button" (click)="close()">Close</button>
+</mat-dialog-actions>

@@ -13,6 +13,6 @@ export class HomeComponent implements OnInit {
   }
 
   openProject(i){
-    alert('Chill Man '+i);
+    // alert('Chill Man '+i);
   }
 }

@@ -9,6 +9,8 @@ import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { ModalDialogComponent } from './shared/modal-dialog/modal-dialog.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProjectDetailsComponent } from './shared/project-details/project-details.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,12 @@ import { ModalDialogComponent } from './shared/modal-dialog/modal-dialog.compone
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     HomeModule,
     SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ModalDialogComponent]
+  entryComponents: [ModalDialogComponent,ProjectDetailsComponent]
 })
 export class AppModule { }

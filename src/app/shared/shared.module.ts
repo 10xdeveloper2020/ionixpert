@@ -6,11 +6,12 @@ import { MyMaterialModule } from '../my-material/my-material.module';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 
 
 @NgModule({
-  declarations: [FooterComponent, HeaderComponent, ModalDialogComponent],
+  declarations: [FooterComponent, HeaderComponent, ModalDialogComponent, ProjectDetailsComponent],
   imports: [
     CommonModule,
     MyMaterialModule,
@@ -18,6 +19,6 @@ import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  exports: [FooterComponent, HeaderComponent, ModalDialogComponent]
+  exports: [FooterComponent, HeaderComponent, ModalDialogComponent, ProjectDetailsComponent]
 })
 export class SharedModule { }

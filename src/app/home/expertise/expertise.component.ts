@@ -58,7 +58,8 @@ export class ExpertiseComponent implements OnInit {
     {
       name: 'Add-ons',
       langs: [
-        { name: 'React', img: 'react.png' },
+        { name: 'React JS', img: 'react.png' },
+        { name: 'Flutter', img: 'flutter.png' },
         { name: 'Node JS', img: 'express_node.png' },
         { name: 'Next JS', img: 'nextjs.svg', class: { 'filter-invert': true }  },
         { name: 'Redis', img: 'redis.png' },
