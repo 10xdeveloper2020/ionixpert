@@ -39,4 +39,11 @@ export class HeaderComponent implements OnInit {
       data => console.log("Dialog output:", data)
     );
   }
+  
+  showDocument(): void {
+    var link = document.createElement('a');
+    link.href = '/assets/Harish_Ale_Resume.pdf';
+    link.download = 'Harish_Ale_Resume.pdf';
+    link.dispatchEvent(new MouseEvent('click'));
+  }
 }

@@ -44,7 +44,7 @@ export class ProjectsComponent implements OnInit {
           name: 'Epsilon Logistics',
           img: 'epsilon.png',
           description: `**This app was developed for a logistics company that operates Coastal Shipping
-          **Planning of Consignments port and time allocation, Planthe voyage, Strategically placing the consignments, consignors and consignees entities to their respectiveports.
+          **Planning of Consignments port and time allocation, Plan the voyage, Strategically placing the consignments, consignors and consignees entities to their respectiveports.
           **Shows the time table of different vessels (ships) depending on the voyages in the given timeline.
           **Worked as a developer and team-lead. Teamsize: 4 members.`,
           langs: ['ionic 3 Framework', 'SLIM PHP Framework', 'SCSS', 'Angular 5', 'TypeScript', 'MySQL'],

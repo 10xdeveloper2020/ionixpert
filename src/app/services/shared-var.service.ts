@@ -43,4 +43,5 @@ export class SharedVarService {
       this.removeFromCart(newLang.name);
     }
   }
+
 }

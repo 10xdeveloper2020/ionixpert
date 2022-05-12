@@ -23,6 +23,20 @@ export class FooterComponent implements OnInit {
     // this.quote.getQuote().subscribe((resp) => {
     //   console.log('quote: ', quoteTemp);
     // });
+  }
 
+  showDocument(): void {
+    var link = document.createElement('a');
+    link.href = '/assets/Harish_Ale_Resume.pdf';
+    link.download = 'Harish_Ale_Resume.pdf';
+    link.dispatchEvent(new MouseEvent('click'));
+
+
+    // this.quote.getResume()
+    //   .subscribe((blob: Blob): void => {
+    //     const file = new Blob([blob], {type: 'application/pdf'});
+    //     const fileURL = URL.createObjectURL(file);
+    //     window.open(fileURL, '_blank', 'width=1000, height=800');
+    //   });
   }
 }
