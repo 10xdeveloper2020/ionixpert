@@ -1,5 +1,5 @@
 <mat-toolbar class="header">
-  <div style="flex-grow: 2;" class="ionixpert-logo" (click)="showDocument()">
+  <div style="flex-grow: 2;" class="ionixpert-logo">
     <a routerLink="">ionixpert</a>
   </div>
   <div style="flex-grow: 8;" class="neons">
@@ -18,7 +18,7 @@
   <div style="flex-grow: 2;" class="dp">
     <!-- <h1 class="main-title">Harish Ale</h1> -->
     <span class="shopping-cart" (click)="showCart()">
-      <i class="fa fa-graduation-cap" style="font-size:24px" aria-hidden="true"></i>
+      <i class="fa fa-graduation-cap" [ngClass]="{'shake':shake}" style="font-size:24px" aria-hidden="true"></i>
       <span class='badge badge-warning' id='lblCartCount'> {{cartCount}}</span>
     </span>
     <img src="assets/img/dragon_logo.svg" alt="website logo" (click)="vibrate()">

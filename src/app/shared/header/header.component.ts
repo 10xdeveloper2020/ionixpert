@@ -13,12 +13,22 @@ export class HeaderComponent implements OnInit {
   @Input('menuRoutes') menuRoutes = [];
   cart: Lang[];
   cartCount: number;
-  constructor(private sharedVarService: SharedVarService, private dialog: MatDialog) { }
+  shake:boolean;
+
+  constructor(private sharedVarService: SharedVarService, private dialog: MatDialog) { 
+  }
 
   ngOnInit() {
+    this.shake = true;
     this.sharedVarService.getCart().subscribe((res) => {
       this.cart = res;
-      this.cartCount = res.length;
+      if(this.cartCount!=res.length){
+        this.shake = true;
+        this.cartCount = res.length;
+      }
+      setTimeout(()=>{
+        this.shake = false;
+      },300);
     })
   }
 
@@ -38,12 +48,5 @@ export class HeaderComponent implements OnInit {
     dialogRef.afterClosed().subscribe(
       data => console.log("Dialog output:", data)
     );
-  }
-  
-  showDocument(): void {
-    var link = document.createElement('a');
-    link.href = '/assets/Harish_Ale_Resume.pdf';
-    link.download = 'Harish_Ale_Resume.pdf';
-    link.dispatchEvent(new MouseEvent('click'));
   }
 }

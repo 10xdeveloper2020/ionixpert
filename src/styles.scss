@@ -46,6 +46,10 @@ mat-dialog-container{
   background: rgb(2,0,36) !important;
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(121,9,77,1) 100%) !important;
   color: #fff !important;
+  border: 1px solid #db7093;
+}
+.cdk-overlay-dark-backdrop{
+  background: rgb(0 0 0 / 60%) !important;
 }
 
 .main-block {

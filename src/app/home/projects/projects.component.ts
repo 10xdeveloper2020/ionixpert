@@ -14,8 +14,8 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'IBM',
       projects: [
-        { name: 'SBI Yono', img: 'yono.png', description: 'afaf', langs: [], },
-        { name: 'Janssen Carepath', img: 'janssen.svg', description: 'afaf', langs: [], }
+        { name: 'SBI Yono', img: 'yono.png', description: '', langs: ['Angular', 'Ionic 1 Framework', 'HTML', 'CSS', 'JavaScript'], },
+        { name: 'Janssen Carepath', img: 'janssen.svg', description: '', langs: ['SalesForce','Angular JS', 'HTML', 'CSS', 'JavaScript','COPADO'], }
       ]
     },
     {
@@ -24,7 +24,8 @@ export class ProjectsComponent implements OnInit {
         {
           name: 'MESOP',
           img: 'mesop.png',
-          description: 'An ESOP (Employee stock ownership plan) refers to an employee benefit plan which offers employees anownership interest in the organization',
+          description: `**An ESOP (Employee stock ownership plan) refers to an employee benefit plan which offers employees anownership interest in the organization
+          **Grant Creation, Stocks Allotment, Exercise the Options, Trust Approval Process`,
           langs: ['Angular 5', 'ionic 3', 'Angular Material', 'Third Party Plugins'],
         },
         {
