@@ -11,6 +11,8 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { ModalDialogComponent } from './shared/modal-dialog/modal-dialog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectDetailsComponent } from './shared/project-details/project-details.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { ProjectDetailsComponent } from './shared/project-details/project-detail
     HttpClientModule,
     HomeModule,
     SharedModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent],

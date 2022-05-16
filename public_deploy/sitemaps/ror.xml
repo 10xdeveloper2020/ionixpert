@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
 <channel>
-  <title>ROR Sitemap for http://ionixpert.com/</title>
-  <link>http://ionixpert.com/</link>
+  <title>ROR Sitemap for http://harishale.com/</title>
+  <link>http://harishale.com/</link>
 
 <item>
-     <link>https://ionixpert.com/</link>
-     <title>Ionixpert - Harish Ale</title>
-     <description>Hello World! I am Harish Ale Hybrid Developer, ionic, angular, expert, capacitor, cordova, android, ios, react, react native, react js, nodejs, expressjs.</description>
+     <link>https://harishale.com/</link>
+     <title>Harish Ale - Hybrid Mobile App &amp; Website Developer - Full Stack Engineer</title>
+     <description>Hello World! I am Harish Ale Hybrid Developer, ionic, angular, flutter, web3, blockchain, smart contract, expert, capacitor, cordova, android, ios, react, react native, react js, nodejs, expressjs, mysql.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>0</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
